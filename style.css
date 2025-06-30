@@ -3,6 +3,7 @@
 .navbar {
   background-color: #0a0b27;
   height: 70px;
+  transition: none;
 }
 
 /* toggler-color */
@@ -17,6 +18,23 @@
 }
 .navbar ul{
     gap: 1.2rem;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 1.2rem;
+}
+
+.navbar-brand img {
+  height: 2.2rem;
+  width: auto;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-link:hover{
@@ -246,4 +264,8 @@ footer p a:hover {
   transform: rotate(-45deg);
   top: 10px;
 }
-
+.navbar-toggler {
+  margin: 0 !important;
+  padding: 0.25rem 0.5rem; /* default padding, tweak if needed */
+  align-self: center; /* make sure it stays vertically centered */
+}
